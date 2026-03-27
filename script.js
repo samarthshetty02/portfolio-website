@@ -15,6 +15,13 @@ if (navToggle && navLinks) {
       navToggle.setAttribute('aria-expanded', 'false');
     });
   });
+
+  window.addEventListener('resize', () => {
+    if (window.innerWidth > 768) {
+      navLinks.classList.remove('open');
+      navToggle.setAttribute('aria-expanded', 'false');
+    }
+  });
 }
 
 // Scroll reveal animation using IntersectionObserver
