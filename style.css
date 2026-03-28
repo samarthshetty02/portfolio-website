@@ -406,6 +406,13 @@ main {
   z-index: -1;
 }
 
+.projects-grid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  margin-top: 1rem;
+}
+
 .project-card {
   position: relative;
   background: linear-gradient(
@@ -850,7 +857,8 @@ a {
 
   .skills-grid,
   .education-grid,
-  .contact-grid {
+  .contact-grid,
+  .projects-grid {
     grid-template-columns: 1fr;
   }
 
